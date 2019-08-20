@@ -7,5 +7,6 @@ export function* onIncrement() {
 }
 
 export function* incrementSaga() {
+  /* Like Debounce, will only execute once during the async request (in this case the 3000ms delay above) */
   yield takeLatest('INCREMENT', onIncrement);
 }
